@@ -4,6 +4,8 @@ body {
 	font-weight: normal;
 	line-height: 22px;
 	color: #283136;
+	width: 100%;
+	background-color: #939393;
 }
 
 h1 {
@@ -21,3 +23,20 @@ h2 {
 	line-height: 30px;
 	color: #000000;
 }
+
+.container {
+	width: 1200px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-around;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
