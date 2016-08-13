@@ -24,25 +24,101 @@ h2 {
 }
 
 .container {
-	display: flex;
-	width: 900px;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #eeeeee;
 }
 
-.main-navigation {
-    display: flex;
+.header-flex {
+	display: flex;
 }
 
 ul {
 	display: flex;
 }
 
-section {
+.flex-item {
 	display: flex;
-	width: 880px;
+	width: 900px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
+.advantages {
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.features-flex {
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.about-us {
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.site-logo {
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.site-logo a img {
+	margin-right: 100px;
+}
+
+section .contacts {
+	display: flex;
+	width: 1200px;
+}
+
+div .contacts {
+	position: absolute;
+	bottom: -895px;
+	left: 235px;
+	background-color: white;
+	width: 240px;
+	height: 230px;
+}
+
+div .mapmaker img {
+	position: absolute;
+	bottom: -895px;
+	left: 635px;
+}
+
+.footer-flex {
+	display: flex;
+	width: 900px;
+	height: ;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
 
