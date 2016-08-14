@@ -1,0 +1,219 @@
+body {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+	color: #283136;
+	background: #939393;
+}
+
+h1 {
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 36px;
+	color: #000000;
+}
+
+h2 {
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #000000;
+}
+/*центровщик*/
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+}
+/*верхнее меню*/
+header {
+	height: 90px;
+}
+
+.main-header {
+	display: flex;
+}
+
+.flex-item {
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid black;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	padding-left: 200px;
+}
+
+li {
+	padding-left: 40px;
+}
+
+div .shopping-basket {
+	padding-left: 90px;
+}
+/*часть сайта со слайдером*/
+.advantages {
+	display: flex;
+	width: 900px;
+	height: 345px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid black;
+	
+}
+/*часть сайта о видах услуг*/
+.features-flex {
+	display: flex;
+	width: 900px;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.features-item {
+	padding-right: 80px;
+	height: 380px;
+	border-bottom: 1px solid black;
+}
+/*часть сайта с описанием кто представляет услуги*/
+article {
+	display: flex;
+	width: 900px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid black;
+}
+
+article ul {
+	flex-direction: column;
+}
+/*часть сайта с логотипами сайтов*/
+.site-logo {
+	display: flex;
+	width: 900px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.site-logo a img {
+	margin-right: 100px;
+}
+/*часть сайта с контактными данными*/
+section .contacts {
+	position: relative;
+	width: 1200px;
+}
+
+.map {
+	padding-top: 90px;
+}
+
+div .contacts {
+	position: absolute;
+	bottom: 90px;
+	left: 160px;
+	background-color: white;
+	width: 240px;
+	height: 230px;
+}
+/*???здесь не могу понять, как его поставить на карту???
+div .mapmaker {
+	position: absolute;
+    bottom: 120px;
+	left: 845px;
+    width: 231px;
+    height: 190px;
+    background-image: url('/img/contacts/Layer 28.png');
+}*/
+
+/*верхняя часть на странице каталога с миниатюрами готовых макетов*/
+.welcome {
+	width: 900px;
+	height: ;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid black;
+}
+
+.welcome h1 {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+/*основное на страничке с миниатюрами готовых макетов*/
+.flex-continer {
+	display: flex;
+	width: 900px;
+	height: ;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ 
+.flex-continer aside {
+	display: flex;
+	flex-direction: column;
+	min-width: 240px; 
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+}
+
+section .content {
+	display: flex;
+}
+
+article {
+	display: flex;
+    flex-wrap: wrap;
+	width: 560px; 
+}
+
+article img {
+	padding: 20px;
+}
+/*нижняя часть сайта*/
+.footer-flex {
+	display: flex;
+	width: 900px;
+	height: px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+
