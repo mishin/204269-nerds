@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Виктор Каморин](https://up.htmlacademy.ru/htmlcss/14/user/204269).
-* Наставник: [Женя Лапина](https://htmlacademy.ru/profile/id20433).
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
 
 ---
 
