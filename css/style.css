@@ -45,7 +45,6 @@ header {
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid black;
 }
 
 ul {
@@ -60,6 +59,29 @@ li {
 
 div .shopping-basket {
 	padding-left: 90px;
+	font-family: Roboto Medium;
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	font-weight: bold;
+}
+
+div .shopping-basket a {
+	color: black;
+	text-decoration: none;
+}
+
+.main-navigation li {
+	font-family: Roboto Medium;
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	font-weight: bold;
+}
+
+.main-navigation li a {
+	color: black;
+	text-decoration: none;
 }
 /*часть сайта со слайдером*/
 .advantages {
