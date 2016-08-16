@@ -4,7 +4,7 @@ body {
 	font-weight: normal;
 	line-height: 22px;
 	color: #283136;
-	background: #939393;
+	background: #ffffff;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h2 {
 }
 /*центровщик*/
 .container {
-	width: 1200px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
@@ -32,10 +32,12 @@ h2 {
 /*верхнее меню*/
 header {
 	height: 90px;
+	background-color: #eeeeee;
 }
 
 .main-header {
 	display: flex;
+	padding-top: 35px;
 }
 
 .flex-item {
@@ -45,21 +47,45 @@ header {
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid black;
+	background-color: #eeeeee;
 }
 
 ul {
 	display: flex;
 	list-style-type: none;
-	padding-left: 200px;
+	padding-left: 145px;
 }
 
 li {
-	padding-left: 40px;
+	padding-left: 45px;
 }
 
-div .shopping-basket {
+.shopping-basket {
+	margin: 16px 0;
 	padding-left: 90px;
+	font-family: Roboto Medium;
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	font-weight: bold;
+}
+
+.shopping-basket a {
+	color: black;
+	text-decoration: none;
+}
+
+.main-navigation li {
+	font-family: Roboto Medium;
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	font-weight: bold;
+}
+
+.main-navigation li a {
+	color: black;
+	text-decoration: none;
 }
 /*часть сайта со слайдером*/
 .advantages {
@@ -70,7 +96,6 @@ div .shopping-basket {
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid black;
 	
 }
 /*часть сайта о видах услуг*/
@@ -87,22 +112,43 @@ div .shopping-basket {
 .features-item {
 	padding-right: 80px;
 	height: 380px;
-	border-bottom: 1px solid black;
+	
 }
 /*часть сайта с описанием кто представляет услуги*/
-article {
+.about-us {
 	display: flex;
-	width: 900px;
 	margin-top: 70px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-bottom: 1px solid black;
+	font-family: Roboto Medium;
+	font-size: 16px;
+	line-height: 22px;
+	color: black;
+	font-weight: bold;
 }
 
-article ul {
+.about-us-right {
+	width: 250px;
+}
+
+.about-us-left {
+	width: 650px;
+}
+
+.about-us-left ul {
 	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+ .about-us-right ul {
+	flex-direction: column;
+	padding-left: 0px;
+}
+
+.about-us-right li {
+	padding-bottom: 20px;
+}
+
+.about-us-left li {
+	padding-bottom: 20px;
 }
 /*часть сайта с логотипами сайтов*/
 .site-logo {
@@ -113,31 +159,46 @@ article ul {
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid black;
+	padding-bottom: 100px;
 }
 
 .site-logo a img {
 	margin-right: 100px;
 }
 /*часть сайта с контактными данными*/
-section .contacts {
-	position: relative;
+.contacts {
+	background-image: url(/img/contacts/Прямоугольник 1.png);
 	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.map {
+	
+}
+
+/*section .contacts {
+	position: relative;
+	width: 100%;
+}
+
+.contacts {
+	width: 100%;
 }
 
 .map {
 	padding-top: 90px;
+	padding: 0 auto;
 }
 
-div .contacts {
+div.contacts {
 	position: absolute;
 	bottom: 90px;
 	left: 160px;
 	background-color: white;
 	width: 240px;
 	height: 230px;
-}
+}*/
 /*???здесь не могу понять, как его поставить на карту???
 div .mapmaker {
 	position: absolute;
@@ -149,20 +210,23 @@ div .mapmaker {
 }*/
 
 /*верхняя часть на странице каталога с миниатюрами готовых макетов*/
+body .welcome {
+	width: 100%;
+}
+
 .welcome {
-	width: 900px;
-	height: ;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 70px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid black;
+	background-color: #eeeeee;
 }
 
 .welcome h1 {
 	padding-left: 120px;
 	padding-right: 120px;
+	text-align: center;
 }
 
 /*основное на страничке с миниатюрами готовых макетов*/
@@ -190,12 +254,7 @@ label {
 
 section .content {
 	display: flex;
-}
-
-article {
-	display: flex;
-    flex-wrap: wrap;
-	width: 560px; 
+	width: 100%;
 }
 
 article img {
@@ -204,13 +263,32 @@ article img {
 /*нижняя часть сайта*/
 .footer-flex {
 	display: flex;
-	width: 900px;
-	height: px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 70px;
+	margin-bottom: 70px;
+}
+
+.footer-social ul {
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-top: 70px;
+	margin-right: 10px;
+}
+
+.a-discount h2 {
+	font-family: Roboto Medium;
+	font-size: 36px;
+	line-height: 36px;
+	color: black;
+	font-weight: bold;
+	width: 560px;
+	padding-top: 40px;
+	margin-bottom: 10px;
+}
+
+.a-discount p {
+	font-family: Roboto Medium;
+	font-size: 16px;
+	line-height: 22px;
+	color: black;
+	font-weight: bold;
 }
 
 
