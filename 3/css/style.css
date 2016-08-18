@@ -27,17 +27,17 @@ h2 {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ffffff;
 }
 /*верхнее меню*/
 header {
 	height: 90px;
-	background-color: #eeeeee;
+	
 }
 
 .main-header {
-	display: flex;
 	padding-top: 35px;
+	background-color: #eeeeee;
+	height: 290px;
 }
 
 .flex-item {
@@ -47,7 +47,6 @@ header {
 	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #eeeeee;
 }
 
 ul {
@@ -210,23 +209,15 @@ div .mapmaker {
 }*/
 
 /*верхняя часть на странице каталога с миниатюрами готовых макетов*/
-body .welcome {
-	width: 100%;
-}
-
 .welcome {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 70px;
-	padding-left: 10px;
-	padding-right: 10px;
 	background-color: #eeeeee;
 }
 
 .welcome h1 {
-	padding-left: 120px;
-	padding-right: 120px;
 	text-align: center;
+	margin-left: 290px;
+	margin-right: 300px;
+	margin-top: 55px;
 }
 
 /*основное на страничке с миниатюрами готовых макетов*/
@@ -290,6 +281,22 @@ article img {
 	color: black;
 	font-weight: bold;
 }
+
+.content {
+	font-family: Roboto Medium;
+	font-size: 12px;
+	line-height: 18px;
+	color: black;
+	font-weight: bold;
+}
+
+.content ul {
+	padding-left: 100px;
+}
+
+.top-content span {
+	margin: 16px 0;
+} 
 
 
 
