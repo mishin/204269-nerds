@@ -61,6 +61,10 @@ header {
 	padding-left: 44px;
 }
 
+.main-navigation a:hover {
+    color: #fb565a;
+}
+
 .shopping-basket {
 	margin: 16px 0;
     padding-left: 95px;

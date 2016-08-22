@@ -61,7 +61,36 @@ header {
 	padding-left: 44px;
 }
 
+.flex-item a {
+	display: block;
+}
+
+.main-navigation a:hover {
+    color: #fb565a;
+}
+
+.basket {
+	position: relative;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/sprite/sprite.png") no-repeat;
+  background-position: -1px -3px;
+  opacity: 0.4;
+}
+
+.basket:hover::before {
+  opacity: 1;
+}
+
 .shopping-basket {
+	display: flex;
 	margin: 16px 0;
     padding-left: 95px;
     padding-right: 10px;
@@ -189,11 +218,29 @@ header {
 
 .adres {
 	position: absolute;
-	bottom: 95px;
+	bottom: 88px;
 	left: 235px;
 	background-color: white;
-	width: 240px;
-	height: 230px;
+	width: 250px;
+	height: 240px;
+}
+
+.name {
+    margin-top: 24px;
+    margin-left: 20px;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 200;
+	color: #000000;
+}
+
+.adres p {
+    margin-top: 30px;
+	margin-left: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #666666;
 }
 
 .mapmaker {
@@ -202,7 +249,7 @@ header {
 	left: 915px;
     width: 231px;
     height: 190px;
-    background-image: url("../img/contacts/mapmaker.png");
+    background: url("../img/contacts/logo-mapmaker.png") no-repeat 35px 60px, url("../img/contacts/mapmaker.png");
 }
 /*верхняя часть на странице каталога с миниатюрами готовых макетов*/
 .welcome {
@@ -263,9 +310,32 @@ section .show {
 }
 
 .footer-social li a {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
+
+.social-btn {
+  width: 60px;
+  height: 60px;
+  margin: 0 2px;
+  font-size: 0px;
+  border: 50px;
+  background: #666666;
+}
+
+.social-btn-vk {
+  padding: 30px;
+}
+
+.social-btn-fb {
+  padding: 30px;
+}
+
+.social-btn-inst {
+  padding: 30px;
+}
+
+
 
 .a-discount {
 	padding-left: 60px;
@@ -363,8 +433,145 @@ input[type="range"] {
 	color: black;
 	text-decoration: none;
 }
+/*кнопкa где слайдер*/
+.btn {
+  padding: 10px 70px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fb565a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
 
+.btn:active {
+  background-color: #b63538;
+}
 
+.btn:hover {
+  background-color: #d6494d;
+}
+
+.desc-slider p {
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+}
+/*кнопки где виды услуг*/
+.features-item p {
+  margin-bottom: 0px;
+  padding-bottom: 35px;
+}
+
+.btn-websites {
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fb565a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-websites:active {
+  background-color: #b63538;
+}
+
+.btn-websites:hover {
+  background-color: #d6494d;
+}
+
+.btn-apps {
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #00ca74;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-apps:active {
+  background-color: #009053;
+}
+
+.btn-apps:hover {
+  background-color: #01a25e;
+}
+
+.btn-presentations {
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #efc84a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-presentations:active {
+  background-color: #009053;
+}
+
+.btn-presentations:hover {
+  background-color: #c09b24;
+}
+/*кнопка где карта с указанием местонахождения*/
+.feedback {
+	margin-left: 20px;
+}
+
+.btn-contacts {
+  padding: 10px 50px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fb565a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-contacts:active {
+  background-color: #b63538;
+}
+
+.btn-contacts:hover {
+  background-color: #d6494d;
+}
 
 
 
