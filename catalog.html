@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -44,16 +45,18 @@
   <div class="flex-continer container">
     <aside class="left">
       <form>
-        <div class="price">
-          <h3>СТОИМОСТЬ:</h3>
-          <input type="range" min="0" max="15000" step="1" value="50">
-          <div class="selection">
-            <span class="price">от</span>
-            <input type="text" value="0">
-            <span class="price">до</span>
-            <input type="text" value="15000">
-          </div>
-        </div>
+        <h3>СТОИМОСТЬ:</h3>
+        <div class="range-filter">
+		  <div class="range-controls">
+			<div class="scale"><div style="width:70%;" class="bar"></div></div>
+			<div class="toggle min-toggle"></div>
+			<div class="toggle max-toggle"></div>
+		  </div>
+		  <div class="price-controls">
+		    от <input class="min-price" type="text" value="0">
+			до <input class="max-price" type="text" value="15 000"
+		  </div>
+		</div>
         <div class="design-options">
           <h3>СЕТКА:</h3>
           <label>
@@ -171,9 +174,18 @@
     <div class="map">
     </div>
     <div class="adres">
-	  <p> NЁRDS DESIGN STUDIO 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
-        <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
-      </p>
+	    <div class="name">
+		  NЁRDS DESIGN STUDIO
+	    </div> 
+	    <p>
+		  191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. 	
+	    </p>
+		<p class="tel">
+			+7 (812) 275-75-75
+		</p>
+		<div class="feedback">
+		  <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
+		</div>
     </div>
     <div class="mapmaker">
     </div>
@@ -192,6 +204,7 @@
           <li>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </li>
+		</ul>
       </div>
       <div class="a-discount">
         <h2>Давайте дружить, это выгодно!</h2>
