@@ -1,14 +1,14 @@
 body {
-	font-family: Roboto;
+	font-family: Roboto Medium;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 22px;
 	color: #283136;
 	background: #ffffff;
 }
 
 h1 {
-	font-family: Roboto;
+	font-family: Roboto Medium;
 	font-size: 36px;
 	font-weight: normal;
 	line-height: 36px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-	font-family: Roboto;
+	font-family: Roboto Medium;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 30px;
@@ -81,7 +81,7 @@ header {
   width: 25px;
   height: 25px;
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -1px -3px;
+  background-position: -1px -312px;
   opacity: 0.4;
 }
 
@@ -359,21 +359,27 @@ section .show {
   background: #666666;
 }
 
+.social-btn a:hover {
+  background: #fb565a url("../img/sprite/sprite.png") no-repeat;
+}
+
 .social-btn-vk {
   padding: 30px;
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: 20px -205px;
+  background: #666666 url("../img/sprite/sprite.png") no-repeat;
+  background-position: 11px 3px;
 }
 
 .social-btn-fb {
   padding: 30px;
+  background: #666666 url("../img/sprite/sprite.png") no-repeat;
+  background-position: 9px -45px;
 }
 
 .social-btn-inst {
   padding: 30px;
+  background: #666666 url("../img/sprite/sprite.png") no-repeat;
+  background-position: 9px -95px;
 }
-
-
 
 .a-discount {
 	padding-left: 60px;
@@ -739,7 +745,8 @@ label {
   width: 630px;
   height: 415px;
   color: #000000;
-  background: #f8f3f0;
+  background: #ffffff;
+  box-shadow: 5px 3px 20px 20px rgba(215, 220, 222, 0.5);
 }
 
 .modal-content-close {
@@ -774,6 +781,69 @@ label {
 .modal-content-close::after {
   transform: rotate(-45deg);
 }
+
+.modal-content label {
+  font-family: Roboto Medium;
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.modal-content input {
+  font-family: Roboto Medium;
+  font-size: 11px;
+  line-height: 18px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.top-form-modal {
+  display: flex;
+  width: 500px;
+  margin: 50px 80px;
+}
+
+.top-form-modal label{
+  width: 220px;
+  margin-right: 25px;
+}
+
+.message {
+  width: 460px;
+  margin: 30px auto;
+}
+
+.message input {
+  padding-bottom: 75px;
+}
+
+button .modal-content-send {
+  margin-left: 100px;
+}
+
+.modal-content-send {
+  padding: 10px 197px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fb565a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 85px;
+}
+
 
 
 
