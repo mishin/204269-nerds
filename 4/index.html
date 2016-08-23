@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-index.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-htmlcss.github.io/204269-nerds/4/">
 </head>
 
@@ -37,43 +38,39 @@
       </div>
     </div>
     <!--Часть сайта со слайдером-->
-    <section>
-      <div class="advantages">
-        <div class="slider">
-          <div class="desc-slider">
-            <h1>Долго, дорого,<br>скрупулезно.</h1>
-            <p>Математически выверенный дизайн
-              <br>для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
-          <div class="img-slider">
-            <img src="img/slider-1/image-1.png" width="338" height="231" alt="Делаем сайты, которые правильно отображаются на любых устройствах.">
-          </div>
-        </div>
-    <!--<div class="slider">
-          <div class="desc-slider">
-            <h1>Любите ли вы математику,<br>как любим её мы?</h1>
-            <p>Нашим дизайнерам мы удаляем нейроны, ответственные
-              <br>за креатив, чтобы дать им возможность всё просчитать.</p>
-            <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
-          <div class="img-slider">
-            <img src="img/slider-2/image-2.png" width="338" height="231" alt="Делаем сайты, которые любят поисковики.">
-          </div>
-        </div>
-        <div class="slider">
-          <div class="desc-slider">
-            <h1>Только наркотики,<br>только хардкор.</h1>
-            <p>Все дизайнерские решения в нашей компании принимаются,
-              <br>только под воздействием качественных галлюциногенов.</p>
-            <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
-          <div class="img-slider">
-            <img src="img/slider-3/image-3.png" width="338" height="231" alt="Делаем сайты, которые любят поисковики.">
-          </div>
-        </div>-->
-      </div>
-    </section>
+    <div class="slider">
+	  <input type="radio" id="btn-1" name="toggle" checked> 
+      <input type="radio" id="btn-2" name="toggle">
+	  <input type="radio" id="btn-3" name="toggle">
+	  <div class="slider-controls">
+		<label for="btn-1"></label> 
+		<label for="btn-2"></label>
+		<label for="btn-3"></label>
+	  </div>
+	  <div class="slides">
+		<div class="slide">
+		  <div class="slide-text">
+		    <div class="slide-title">Долго, дорого, скрупулезно.</div>
+			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+			<a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		  </div> 
+		</div>
+		<div class="slide">
+		  <div class="slide-text">
+		    <div class="slide-title">Любите ли вы математику, как любим её мы?</div>
+			<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать.</p>
+			<a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		  </div> 
+		</div>
+		<div class="slide">
+		  <div class="slide-text">
+		    <div class="slide-title">Только наркотики, только хардкор.</div>
+			<p>Все дизайнерские решения в нашей компании принимаются, только под воздействием качественных галлюциногенов.</p>
+			<a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		  </div> 
+		</div>
+	  </div>
+	</div>
   </header>
   <main class="container">
     <!--Часть сайта о видах услуг-->
@@ -169,6 +166,22 @@
     </div>
     <div class="mapmaker">
     </div>
+	<!--всплывающее окно, после клика напишите нам-->
+    <div class="modal-content">
+      <form>
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<label class="username">Ваше имя:
+		<input type="name" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+	    </label>
+        <label class="email">Ваш e-mail:
+          <input type="email" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </label>
+		<label class="message">Текст письма:
+          <input type="text" name="message" value="" placeholder="В СВОБОДНОЙ ФОРМЕ">
+        </label>
+        <button class="modal-content-send" type="button" title="Отправить">Отправить</button>
+	  </form>
+    </div> 
   </section>
   <!--Нижняя часть сайта-->
   <footer class="container">
