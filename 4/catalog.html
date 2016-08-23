@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-htmlcss.github.io/204269-nerds/4/">
+</head>
+
+<body>
+  <!--Лого, верхнее меню-->
+  <header class="main-header">
+    <div class="flex-item container">
+      <div class="logo">
+        <a href="index.html" title="Главная страница сайта">
+          <img src="img/header/logo-header.png" width="139" height="56" alt="Разработка сайтов под заказ">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">СТУДИЯ</a>
+          </li>
+          <li>
+            <a href="#">КЛИЕНТЫ</a>
+          </li>
+          <li>
+            <a href="#">МАГАЗИН</a>
+          </li>
+          <li>
+            <a href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="shopping-basket">
+        <a class="basket" href="#">КОРЗИНА</a>
+      </div>
+    </div>
+    <div class="welcome">
+      <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+    </div>
+  </header>
+  <div class="flex-continer container">
+    <aside class="left">
+      <form>
+        <div class="price">
+          <h3>СТОИМОСТЬ:</h3>
+          <input type="range" min="0" max="15000" step="1" value="50">
+          <div class="selection">
+            <span class="price">от</span>
+            <input type="text" value="0">
+            <span class="price">до</span>
+            <input type="text" value="15000">
+          </div>
+        </div>
+        <div class="design-options">
+          <h3>СЕТКА:</h3>
+          <label>
+            <input type="radio" name="question-one" value="Адаптивная" checked> Адаптивная
+          </label>
+          <label>
+            <input type="radio" name="question-two" value="Фиксированная"> Фиксированная
+          </label>
+          <label>
+            <input type="radio" name="question-three" value="Резиновая"> Резиновая
+          </label>
+        </div>
+        <div class="features">
+          <h3>ОСОБЕННОСТИ:</h3>
+          <label>
+            <input type="radio" name="one-question" value="Слайдер" checked> Слайдер
+          </label>
+          <label>
+            <input type="radio" name="two-question" value="Блок преимуществ"> Блок преимуществ
+          </label>
+          <label>
+            <input type="radio" name="three-question" value="Новости" checked> Новости
+          </label>
+          <label>
+            <input type="radio" name="four-question" value="Галерея"> Галерея
+          </label>
+          <label>
+            <input type="radio" name="five-question" value="Корзина"> Корзина
+          </label>
+        </div>
+        <button class="btn-show">ПОКАЗАТЬ</button>
+      </form>
+    </aside>
+
+    <main class="content">
+      <section class="sort">
+        <span>СОРТИРОВАТЬ:</span>
+        <ul>
+          <li>
+            <a class="show" href="#">ПО ЦЕНЕ</a>
+          </li>
+          <li>
+            <a class="show" href="#">ПО ТИПУ</a>
+          </li>
+          <li>
+            <a class="show" href="#">ПО ЦЕНЕ</a>
+          </li>
+          <li>
+            <a class="show" href="#">ПО ФУНКЦИОНАЛУ</a>
+          </li>
+        </ul>
+      </section>
+      <section class="show">
+        <article class="show">
+          <img src="img/shop/image-aviator.png" width="240" height="240" alt="Миниатюра разработанного сайта AVIATOR">
+          <!--<div class="hidden">
+			   <h3>AVIATOR</h3>
+			     <p class="description">Одностраничный макет с авторским дизайном.</p>
+				   <p class="price">10000 Р.</p>
+			  </div>-->
+          <img src="img/shop/image-sunset.png" width="240" height="240" alt="Миниатюра разработанного сайта SINSET">
+          <!--<div class="hidden">
+			   <h3>SINSET</h3>
+			     <p class="description">Интернет-магазин с личным кабинетом.</p>
+				   <p class="price">8000 Р.</p>
+			  </div>-->
+          <img src="img/shop/image-forte.png" width="240" height="240" alt="Миниатюра разработанного сайта FORTE">
+          <!--<div class="hidden">
+			   <h3>FORTE</h3>
+			     <p class="description">Отличный макет для личного блога.</p>
+				   <p class="price">5000 Р.</p>
+			  </div>-->
+          <img src="img/shop/image-modern-organic-thai.png" width="240" height="240" alt="Миниатюра разработанного сайта Modern organic THAI">
+          <!--<div class="hidden">
+			   <h3>Modern organic THAI</h3>
+			     <p class="description">Сайт для ресторана быстрого питания.</p>
+				   <p class="price">12000 Р.</p>
+			  </div>-->
+          <img src="img/shop/image-avenue.png" width="240" height="240" alt="Миниатюра разработанного сайта AVENUE">
+          <!--<div class="hidden">
+			   <h3>AVENUE</h3>
+			     <p class="description">Макет для блога о путешествиях.</p>
+				   <p class="price">8000 Р.</p>
+			  </div>-->
+          <img src="img/shop/image-dovetail.png" width="240" height="240" alt="Миниатюра разработанного сайта DOVETAIL">
+          <!--<div class="hidden">
+			   <h3>DOVETAIL</h3>
+			     <p class="description">Интернет-магазин с галереей товаров.</p>
+				   <p class="price">14000 Р.</p>
+			  </div>-->
+        </article>
+      </section>
+      <section class="switch-pages">
+        <div class="switch-pages">
+          <ul>
+            <li>
+              <a class="switch-pages" href="#">1</a>
+            </li>
+            <li>
+              <a class="switch-pages" href="#">2</a>
+            </li>
+            <li>
+              <a class="switch-pages" href="#">3</a>
+            </li>
+            <li>
+              <a class="switch-pages" href="#">СЛЕДУЮЩАЯ</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+  </div>
+  </main>
+  <!--Часть сайта с контактными данными-->
+  <section class="contacts">
+    <div class="map">
+    </div>
+    <div class="adres">
+	  <p> NЁRDS DESIGN STUDIO 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
+        <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
+      </p>
+    </div>
+    <div class="mapmaker">
+    </div>
+  </section>
+  <!--Нижняя часть сайта-->
+  <footer class="container">
+    <div class="footer-flex">
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </li>
+      </div>
+      <div class="a-discount">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
