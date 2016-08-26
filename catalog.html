@@ -26,7 +26,7 @@
           <li>
             <a href="#">КЛИЕНТЫ</a>
           </li>
-          <li>
+          <li class="active">
             <a href="#">МАГАЗИН</a>
           </li>
           <li>
@@ -44,7 +44,7 @@
   </header>
   <div class="flex-continer container">
     <aside class="left">
-      <form>
+      <form action="" method="get">
         <h3>СТОИМОСТЬ:</h3>
         <div class="range-filter">
 		  <div class="range-controls">
@@ -59,33 +59,25 @@
 		</div>
         <div class="design-options">
           <h3>СЕТКА:</h3>
-          <label>
-            <input type="radio" name="question-one" value="Адаптивная" id="checked"> Адаптивная
-          </label>
-          <label>
-            <input type="radio" name="question-two" value="Фиксированная"> Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="question-three" value="Резиновая"> Резиновая
-          </label>
+            <input type="radio" id="ch1" name="question-one" value="Адаптивная" checked> 
+            <label for="ch1">Адаптивная</label>
+            <input type="radio" id="ch2" name="question-one" value="Фиксированная">
+            <label for="ch2">Фиксированная</label>
+            <input type="radio" id="ch3" name="question-one" value="Резиновая"> 
+            <label for="ch3">Резиновая</label>
         </div>
         <div class="features">
           <h3>ОСОБЕННОСТИ:</h3>
-          <label>
-            <input type="radio" name="one-question" value="Слайдер" checked> Слайдер
-          </label>
-          <label>
-            <input type="radio" name="two-question" value="Блок преимуществ"> Блок преимуществ
-          </label>
-          <label>
-            <input type="radio" name="three-question" value="Новости" checked> Новости
-          </label>
-          <label>
-            <input type="radio" name="four-question" value="Галерея"> Галерея
-          </label>
-          <label>
-            <input type="radio" name="five-question" value="Корзина"> Корзина
-          </label>
+            <input type="checkbox" id="fh1" name="two-question" value="Слайдер" checked>
+            <label>Слайдер</label>
+            <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ">
+            <label>Блок преимуществ</label>
+            <input type="checkbox" id="fh3" name="two-question" value="Новости" checked>
+            <label>Новости</label>
+            <input type="checkbox" id="fh4" name="two-question" value="Галерея">
+            <label>Галерея</label>
+            <input type="checkbox" id="fh5" name="two-question" value="Корзина">
+            <label>Корзина</label>
         </div>
         <button class="btn-show">ПОКАЗАТЬ</button>
       </form>
@@ -149,7 +141,7 @@
       <section class="switch-pages">
         <div class="switch-pages">
           <ul>
-            <li>
+            <li class="page-active">
               <a class="switch-pages" href="#">1</a>
             </li>
             <li>
@@ -175,10 +167,10 @@
 		  NЁRDS DESIGN STUDIO
 	    </div> 
 	    <p>
-		  191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. 	
+		  191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 	    </p>
 		<p class="tel">
-			+7 (812) 275-75-75
+		  тел.	+7 (812) 275-75-75
 		</p>
 		<div class="feedback">
 		  <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
