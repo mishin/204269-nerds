@@ -510,14 +510,14 @@ section {
     margin: 0 2px;
     font-size: 0px;
     border-radius: 50%;
-    background: #666666;
+    background: #e1e1e1;
 }
 .social-btn:hover {
 	background: #fb565a;
 }
 .social-btn-vk {
     padding: 30px;
-    background: #666666 url("../img/sprite/sprite.png") no-repeat;
+    background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
     background-position: 10px -267px;
 }
 .social-btn-vk:hover {
@@ -530,7 +530,7 @@ section {
 }
 .social-btn-fb {
     padding: 30px;
-    background: #666666 url("../img/sprite/sprite.png") no-repeat;
+    background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -318px;
 }
 .social-btn-fb:hover {
@@ -543,7 +543,7 @@ section {
 }
 .social-btn-inst {
     padding: 30px;
-    background: #666666 url("../img/sprite/sprite.png") no-repeat;
+    background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -363px;
 }
 .social-btn-inst:hover {
