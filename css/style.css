@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 22px;
@@ -7,14 +7,14 @@ body {
     background: #ffffff;
 }
 h1 {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 36px;
     color: #000000;
 }
 h2 {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
@@ -23,8 +23,7 @@ h2 {
 /*центровщик*/
 .container {
     width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 150px;
 }
 /*верхнее меню*/
 header {
@@ -32,10 +31,10 @@ header {
 }
 .main-header {
     width: 100%;
-    padding-top: 35px;
+    padding-top: 29px;
     padding-bottom: 102px;
     background-color: #eeeeee;
-    height: 290px;
+    height: 308px;
 }
 .main-header-catalog {
     width: 100%;
@@ -45,17 +44,16 @@ header {
     height: 190px;
 }
 .flex-item.container {
-    margin-right: 0px;
+    margin-left: 150px;
     width: 880px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 .flex-item ul {
     display: flex;
     list-style-type: none;
+	padding-top: 8px;
     padding-left: 135px;
 }
 .flex-item li {
@@ -90,8 +88,8 @@ header {
 .shopping-basket {
     display: flex;
     margin: 16px 0;
-    padding-left: 95px;
-    padding-right: 10px;
+    padding-left: 90px;
+    padding-top: 8px;
     font-family: Roboto Medium;
     font-size: 14px;
     line-height: 30px;
@@ -111,7 +109,7 @@ header {
     text-decoration: none;
 }
 .main-navigation li {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 14px;
     line-height: 30px;
     color: black;
@@ -131,8 +129,7 @@ header {
     position: relative;
     width: 880px;
     height: 310px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 30px 160px;
 }
 .slider input[type=radio] {
     position: absolute;
@@ -141,7 +138,7 @@ header {
 .slider-controls {
     position: absolute;
     bottom: 95px;
-    left: 50%;
+    left: 49%;
     width: 200px;
     height: 10px;
     margin-left: -100px;
@@ -177,14 +174,14 @@ header {
     padding: 30px 0;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: bold;
     color: #283136;
 }
 .slide-title {
     font-size: 36px;
-    line-height: 1;
-    font-weight: bold;
+    font-weight: 36px;
     color: black;
+	line-height: 35px;
 }
 .slide:nth-child(1) {
     background-image: url("../img/slider-1/image-1.png");
@@ -204,6 +201,9 @@ header {
 .slide {
     display: none;
 }
+.slide-text p {
+	margin-bottom: 39px;
+}
 #btn-1:checked ~ .slides .slide:nth-child(1) {
     display: block;
 }
@@ -218,20 +218,23 @@ header {
     display: flex;
     width: 900px;
     margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 .features-item {
-    padding-right: 80px;
+    padding-right: 40px;
     height: 380px;
+}
+
+.features-item p {
+	width: 280px;
 }
 /*часть сайта с описанием кто представляет услуги*/
 .about-us {
     display: flex;
-    margin-top: 70px;
-    font-family: Roboto Medium;
+    margin-top: 45px;
+	margin-left: 10px;
+    font-family: Roboto Medium, sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: black;
@@ -243,23 +246,42 @@ header {
 .about-us-left {
     width: 650px;
 }
+.about-us-left p {
+	margin-top: 1px;
+	width: 600px;
+}
+.about-us-left h1 {
+	margin-bottom: 16px;
+}
+.about-us-left .list {
+	margin-top: 47px;
+	margin-bottom: 25px;
+}
 .about-us-left ul {
     flex-direction: column;
 	position: relative;
     padding-bottom: 30px;
+	margin-bottom: 25px;
+	padding-left: 35px;
 	list-style-type: none;
 }
 .about-us-right ul {
     flex-direction: column;
 	position: relative;
-    padding-left: 40px;
+    padding-left: 33px;
+	padding-bottom: 25px;
+	margin-top: 20px;
 	list-style-type: none;
 }
 .about-us-right img {
-    padding-top: 0px;
+    padding-top: 10px;
+	padding-left: 25px;
+}
+.about-us-right p {
+    padding-top: 95px;
 }
 .about-us-right li {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 .about-us-left li {
     padding-bottom: 20px;
@@ -271,8 +293,8 @@ header {
   height: 2px;
   background: #fb565a;
   position: absolute;
-  left: -0px;
-  margin-top: 9px;
+  left: -3px;
+  margin-top: 10px;
 }
 .about-us-left li:before {
   content:"";
@@ -282,7 +304,7 @@ header {
   background: #fb565a;
   position: absolute;
   left: 0px;
-  margin-top:9px;
+  margin-top: 7px;
 } 
 /*часть сайта с логотипами сайтов*/
 .site-logo {
@@ -304,7 +326,7 @@ header {
   background: #eeeeee;
   position: absolute;
   left: -10px;
-  margin-top: -50px;
+  margin-top: -55px;
 }
 .site-logo:after {
   content: "";
@@ -314,7 +336,7 @@ header {
   background: #eeeeee;
   position: absolute;
   left: -10px;
-  margin-top: 120px;
+  margin-top: 111px;
 }
 .site-logo a img {
     margin-right: 100px;
@@ -326,8 +348,8 @@ header {
 	background:  url("../img/studio/studio-sprite.png") no-repeat;
     background-position: -5px -15px;
     opacity: 0.3;
-	top: 1px;
-	left: -10px;
+	top: -13px;
+	left: 5px;
 }
 .clukhanko-logo:hover {
 	opacity: 1;
@@ -339,8 +361,8 @@ header {
 	background:  url("../img/studio/studio-sprite.png") no-repeat;
     background-position: -385px -15px;
     opacity: 0.3;
-	top: 1px;
-	left: 300px;
+	top: -5px;
+	left: 315px;
 } 
 .html-logo:hover {
 	opacity: 1;
@@ -352,8 +374,8 @@ header {
 	background:  url("../img/studio/studio-sprite.png") no-repeat;
     background-position: -765px -10px;
     opacity: 0.3;
-	top: 1px;
-	left: 630px
+	top: -11px;
+	left: 645px
 }
 .borodinski-logo:hover {
 	opacity: 1;
@@ -396,7 +418,7 @@ main .content {
 	display: flex;
 }
 section {
-    margin-top: 20px;
+    margin-top: -1px;
 }
 
 .shape {
@@ -490,15 +512,17 @@ section {
     display: flex;
     margin-bottom: 70px;
 }
+.footer-social {
+	margin-left: -29px;
+}
 .footer-social ul {
     display: flex;
-    padding-left: 10px;
     padding-top: 70px;
-    margin-right: 10px;
+    margin-right: px;
     list-style-type: none;
 }
 .footer-social li {
-    padding-left: 10px;
+    padding-left: px;
 }
 .footer-social li a {
     color: white;
@@ -530,6 +554,8 @@ section {
 }
 .social-btn-fb {
     padding: 30px;
+	margin-right: 25px;
+	margin-left: 25px;
     background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -318px;
 }
@@ -555,24 +581,25 @@ section {
     background-position: 9px -363px;
 }
 .a-discount {
-    padding-left: 60px;
+    padding-left: 82px;
 }
 .a-discount h2 {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 36px;
     line-height: 36px;
     color: black;
     font-weight: bold;
-    width: 560px;
+    width: 600px;
     padding-top: 40px;
     margin-bottom: 10px;
 }
 .a-discount p {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: black;
     font-weight: bold;
+	margin-top: 5px;
 }
 /*меню с возможностью сортировки*/
 .sort {
@@ -964,12 +991,16 @@ section.switch-pages {
 /*часть сайта с контактными данными*/
 .contacts {
     position: relative;
+	width: 100%;
+}
+.contacts section {
+	margin-top: 2px;
 }
 .map {
-    width: 1200px;
+    width: 100%;
     height: 416px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: ;
+    margin-right: ;
     background-image: url("../img/contacts/map.png");
 }
 .adres {
@@ -1105,6 +1136,4 @@ button .modal-content-send {
     border-radius: 3px;
     margin-left: 85px;
 }
-section {
-	
-}
+
