@@ -67,6 +67,9 @@ header {
 .main-navigation a:hover {
     color: #fb565a;
 }
+.main-navigation a:active {
+    color: #9c9c9c;
+}
 .basket {
     position: relative;
 }
@@ -99,6 +102,14 @@ header {
     color: black;
     text-decoration: none;
 }
+.shopping-basket a:hover {
+    color: #f7898b;
+    text-decoration: none;
+}
+.shopping-basket a:active {
+    color: #9c9c9c;
+    text-decoration: none;
+}
 .main-navigation li {
     font-family: Roboto Medium;
     font-size: 14px;
@@ -109,6 +120,11 @@ header {
 .main-navigation li a {
     color: black;
     text-decoration: none;
+}
+.main-navigation .active a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px solid #f7898b;
 }
 /*часть сайта со слайдером*/
 .slider {
@@ -271,16 +287,76 @@ header {
 /*часть сайта с логотипами сайтов*/
 .site-logo {
     display: flex;
+	position: relative;
     width: 900px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 205px;
+}
+.site-logo:before {
+  content: "";
+  display: block;
+  width: 900px;
+  height: 2px;
+  background: #eeeeee;
+  position: absolute;
+  left: -10px;
+  margin-top: -50px;
+}
+.site-logo:after {
+  content: "";
+  display: block;
+  width: 900px;
+  height: 2px;
+  background: #eeeeee;
+  position: absolute;
+  left: -10px;
+  margin-top: 120px;
 }
 .site-logo a img {
     margin-right: 100px;
+}
+.clukhanko-logo {
+	position: absolute;
+	width: 235px;
+	height: 115px;
+	background:  url("../img/studio/studio-sprite.png") no-repeat;
+    background-position: -5px -15px;
+    opacity: 0.3;
+	top: 1px;
+	left: -10px;
+}
+.clukhanko-logo:hover {
+	opacity: 1;
+}
+.html-logo {
+	position: absolute;
+	width: 235px;
+	height: 115px;
+	background:  url("../img/studio/studio-sprite.png") no-repeat;
+    background-position: -385px -15px;
+    opacity: 0.3;
+	top: 1px;
+	left: 300px;
+} 
+.html-logo:hover {
+	opacity: 1;
+}
+.borodinski-logo {
+	position: absolute;
+	width: 235px;
+	height: 115px;
+	background:  url("../img/studio/studio-sprite.png") no-repeat;
+    background-position: -765px -10px;
+    opacity: 0.3;
+	top: 1px;
+	left: 630px
+}
+.borodinski-logo:hover {
+	opacity: 1;
 }
 /*верхняя часть на странице каталога с миниатюрами готовых макетов*/
 .welcome {
@@ -309,14 +385,105 @@ header {
     padding-right: 10px;
 }
 main .content {
+    padding-left: px;
+    padding-top: px;
+}
+
+.show {
     padding-left: 40px;
-    padding-top: 85px;
 }
-article img {
-    padding: 30px;
+.options {
+	display: flex;
 }
-section .show {
-    padding-left: 35px;
+section {
+    margin-top: 20px;
+}
+
+.shape {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.shape .details {
+    display: none;
+    width: 200px;
+    height: 200px;
+    padding-top: -20px;
+	margin-left: 40px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.details h3 {
+	font-family: Roboto Medium, sans-serif;
+    display: block;
+    padding-top: 30px;
+    font-size: 18px;
+	font-weight: 9px;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.details p {
+	font-family: Roboto Medium, sans-serif;
+	padding-left: 15px;
+    margin: 10px auto;
+	font-size: 14px;
+	font-weight: 18px;
+}
+
+.button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 8px 35px;
+    margin-top: 15px;
+	margin-left: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fb565a;
+    border-radius: 2px;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #d6494d;
+}
+
+.button:active {
+	color: #ffffff;
+    background-color: #b63538;
+}
+
+.shape.aviator {
+    background: url("../img/shop/image-aviator.png") no-repeat 30% 0%;
+}
+
+.shape.sinset {
+    background: url("../img/shop/image-sunset.png") no-repeat 30% 0%;
+}
+
+.shape.forte {
+    background: url("../img/shop/image-forte.png") no-repeat 30% 0%;
+}
+
+.shape.modern-organic-thai {
+    background: url("../img/shop/image-modern-organic-thai.png") no-repeat 30% 0%;
+}
+
+.shape.avenue {
+    background: url("../img/shop/image-avenue.png") no-repeat 30% 0%;
+}
+
+.shape.dovetail {
+    background: url("../img/shop/image-dovetail.png") no-repeat 30% 0%;
+}
+
+.shape:hover .details {
+    display: block
 }
 /*нижняя часть сайта*/
 .footer-flex {
@@ -345,9 +512,20 @@ section .show {
     border-radius: 50%;
     background: #666666;
 }
+.social-btn:hover {
+	background: #fb565a;
+}
 .social-btn-vk {
     padding: 30px;
     background: #666666 url("../img/sprite/sprite.png") no-repeat;
+    background-position: 10px -267px;
+}
+.social-btn-vk:hover {
+	background: #fb565a url("../img/sprite/sprite.png") no-repeat;
+    background-position: 10px -267px;
+}
+.social-btn-vk:active {
+	background: #d6494d url("../img/sprite/sprite.png") no-repeat;
     background-position: 10px -267px;
 }
 .social-btn-fb {
@@ -355,9 +533,25 @@ section .show {
     background: #666666 url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -318px;
 }
+.social-btn-fb:hover {
+	background: #fb565a url("../img/sprite/sprite.png") no-repeat;
+    background-position: 9px -318px;
+}
+.social-btn-fb:active {
+	background: #d6494d url("../img/sprite/sprite.png") no-repeat;
+    background-position: 9px -318px;
+}
 .social-btn-inst {
     padding: 30px;
     background: #666666 url("../img/sprite/sprite.png") no-repeat;
+    background-position: 9px -363px;
+}
+.social-btn-inst:hover {
+	background: #fb565a url("../img/sprite/sprite.png") no-repeat;
+    background-position: 9px -363px;
+}
+.social-btn-inst:active {
+	background: #d6494d url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -363px;
 }
 .a-discount {
@@ -401,22 +595,43 @@ section .show {
 	padding-left: 0px;
 }
 .sort ul li {
-    padding-left: 0px;
+    padding-left: 35px;
 }
 .sort a {
-    color: black;
+    color: #e0e0e0;
     text-decoration: none;
+	border-bottom: 1px dashed #00ca74;
+	padding-left: 0px;
+}
+.sort a:hover {
+	color: #000000;
+    text-decoration: none;
+	border-bottom: 1px solid #00ca74;
+	padding-left: 0px;
+}
+.sort a:active {
+	color: #000000;
+    text-decoration: none;
+	padding-left: 0px;
+	border-bottom: none;
 }
 .sort li:before {
   content: "";
   display: block;
   width: 30px;
   height: 30px;
-   background: url("../img/sprite/sprite.png") no-repeat;
+  background: url("../img/sprite/sprite.png") no-repeat;
   background-position: -5px -58px;
   position: absolute;
   left: 420px;
   margin-top: -10px;
+  opacity: 0.3;
+}
+.sort li:hover::before {
+	opacity: 0.3;
+}
+.sort li:active::before {
+	opacity: 1;
 }
 /*меню с левой стороны сайта*/
 .flex-continer aside {
@@ -445,7 +660,21 @@ section .show {
   left: 0px;
   margin-top: -5px;
 }
+input[type="radio"]:checked + label:before {
+  content:"";
+  display:block;
+  width:30px;
+  height:30px;
+  background: url("../img/sprite/sprite.png") no-repeat;
+  background-position: -5px -190px;
+  position: absolute;
+  left: 0px;
+  margin-top: -5px;
+}
 .features input[type="radio"] {
+	display: none;
+}
+.features input[type="checkbox"] {
 	display: none;
 }
 .features label {
@@ -455,6 +684,17 @@ section .show {
 	padding-bottom: 20px;
 }
 .features label:before {
+  content:"";
+  display:block;
+  width:30px;
+  height:30px;
+  background: url("../img/sprite/sprite.png") no-repeat;
+  background-position: -5px -150px;
+  position: absolute;
+  left: 0px;
+  margin-top: -5px;
+}
+input[type="checkbox"]:checked + label:before {
   content:"";
   display:block;
   width:30px;
@@ -483,6 +723,12 @@ section .show {
 	font-weight: 18px;
 	background-color: #f1f1f1;
 	cursor: pointer;
+}
+.btn-show:hover {
+	background-color: #e5e5e5;
+}
+.btn-show:active {
+	border-top: #b5b5b5;
 }
 .range-filter {
     width: 240px;
@@ -531,7 +777,7 @@ section .show {
     border: none;
     background: #f1f1f1;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto Medium;
     font-weight: 300;
     font-style: normal;
     text-align: center;
@@ -545,6 +791,9 @@ section .show {
     white-space: nowrap;
 }
 /*переключатель страниц*/
+section.switch-pages {
+    margin-left: 480px;
+}
 .switch-pages {
 	padding-bottom: 40px;
 }
@@ -568,6 +817,25 @@ section .show {
     color: #000000;
     text-decoration: none;
     border-radius: 2px;
+}
+.switch-pages .page-active a {
+	padding: 10px 15px;
+    border: 1px solid #f1f1f1;
+    background: #ffffff;
+	border-radius: 3px;
+}
+.switch-pages .page-active a:hover {
+	padding: 10px 15px;
+    border: 1px solid #f1f1f1;
+    background: #ffffff;
+	border-radius: 3px;
+}
+.switch-pages a:hover {
+	background: #e5e5e5;
+}
+.switch-pages a:active {
+	background: #d5d5d5;
+	border-top: 2px solid #b5b5b5;
 }
 /*кнопкa где слайдер*/
 .btn {
@@ -741,13 +1009,16 @@ section .show {
     position: absolute;
     bottom: 35px;
     right: 375px;
-    /*display: none;*/
+    display: none;
     
     width: 630px;
     height: 415px;
     color: #000000;
     background: #ffffff;
     box-shadow: 5px 3px 20px 20px rgba(215, 220, 222, 0.5);
+}
+.modal-content-show {
+  display: block;
 }
 .modal-content-close {
     position: absolute;
@@ -833,4 +1104,7 @@ button .modal-content-send {
     cursor: pointer;
     border-radius: 3px;
     margin-left: 85px;
+}
+section {
+	
 }
