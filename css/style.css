@@ -38,7 +38,7 @@ header {
 }
 .main-header-catalog {
     width: 100%;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 102px;
     background-color: #eeeeee;
     height: 190px;
@@ -221,6 +221,16 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
+.features-flex:after {
+  content: "";
+  display: block;
+  width: 880px;
+  height: 2px;
+  background: #eeeeee;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 375px;
+}
 .features-item {
     padding-right: 40px;
     height: 380px;
@@ -384,13 +394,16 @@ header {
 .welcome {
     width: 900px;
     height: auto;
-    padding-top: 75px;
+    padding-top: 48px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto;
 }
 .welcome h1 {
+	font-size: 40px;
+	font-weight: auto;
+	line-height: 49px;
     text-align: center;
     padding-left: 115px;
     padding-right: 115px;
@@ -401,8 +414,6 @@ header {
 .flex-continer {
     display: flex;
     width: 880px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -412,10 +423,17 @@ main .content {
 }
 
 .show {
-    padding-left: 40px;
+    padding-top: 52px;
+    padding-left: 60px;
 }
 .options {
 	display: flex;
+}
+.options.two {
+	margin-top: 52px;
+}
+.options.three {
+	margin-top: 52px;
 }
 section {
     margin-top: -1px;
@@ -425,16 +443,18 @@ section {
     position: relative;
     width: 300px;
     height: 300px;
+	margin-right: 20px;
     background-color: #ffffff;
     overflow: hidden;
 }
 
 .shape .details {
     display: none;
+	position: absolute;
+	left: 35px;
+	top: 20px;
     width: 200px;
     height: 200px;
-    padding-top: -20px;
-	margin-left: 40px;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -604,13 +624,13 @@ section {
 /*меню с возможностью сортировки*/
 .sort {
     display: flex;
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: black;
     font-weight: bold;
 	width: 600px;
-    padding-left: 60px;
+    padding-left: 80px;
     padding-top: 85px;
 }
 .sort ul {
@@ -667,6 +687,16 @@ section {
     min-width: 240px;
     padding-top: 65px;
 }
+.design-options {
+	margin-top: 49px;
+}
+.features {
+	margin-top: 25px;
+}
+.flex-continer aside h3 {
+	font-size: 18px;
+	font-weight: 30px;
+}
 .design-options input[type="radio"] {
 	display: none;
 }
@@ -695,8 +725,8 @@ input[type="radio"]:checked + label:before {
   background: url("../img/sprite/sprite.png") no-repeat;
   background-position: -5px -190px;
   position: absolute;
-  left: 0px;
-  margin-top: -5px;
+  left: -1px;
+  margin-top: -7px;
 }
 .features input[type="radio"] {
 	display: none;
@@ -744,8 +774,10 @@ input[type="checkbox"]:checked + label:before {
     border-radius: 3px;
 }
 .btn-show {
-	border: none;
-	padding: 5px 40px;
+	margin-top: 35px;
+    margin-left: 9px;
+    border: none;
+    padding: 6px 42px;
 	font-size: 12px;
 	font-weight: 18px;
 	background-color: #f1f1f1;
@@ -759,7 +791,6 @@ input[type="checkbox"]:checked + label:before {
 }
 .range-filter {
     width: 240px;
-    margin: 50px auto;
 }
 .range-controls {
     position: relative;
@@ -800,12 +831,12 @@ input[type="checkbox"]:checked + label:before {
 .price-controls input {
     width: 60px;
     padding: 8px 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     border: none;
     background: #f1f1f1;
     font-size: 16px;
-    font-family: Roboto Medium;
-    font-weight: 300;
+    font-family: Roboto Medium, sans-serif;
+    font-weight: bold;
     font-style: normal;
     text-align: center;
     color: #283136;
@@ -819,7 +850,8 @@ input[type="checkbox"]:checked + label:before {
 }
 /*переключатель страниц*/
 section.switch-pages {
-    margin-left: 480px;
+	padding-top: 10px;
+    padding-left: 29px;
 }
 .switch-pages {
 	padding-bottom: 40px;
@@ -829,7 +861,7 @@ section.switch-pages {
     list-style-type: none;
 }
 .switch-pages ul li {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .switch-pages a {
     padding: 10px 15px;
@@ -893,11 +925,10 @@ section.switch-pages {
 }
 /*кнопки где виды услуг*/
 .features-item p {
-    margin-bottom: 0px;
-    padding-bottom: 35px;
+    padding-bottom: 5px;
 }
 .btn-websites {
-    padding: 10px 40px;
+    /*padding: 10px 40px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -910,16 +941,23 @@ section.switch-pages {
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 3px;
-}
-.btn-websites:active {
-    background-color: #b63538;
+    border-radius: 3px;*/
+	display: block; 
+    width: 160px;
+    height: 45px;
+    background: url(../img/btn-sprite.png) 2.5% 10% no-repeat;
+    color: #fff;
 }
 .btn-websites:hover {
-    background-color: #d6494d;
+    /*background-color: #d6494d;*/
+	background-position: 2.5% 50%;
+}
+.btn-websites:active {
+    /*background-color: #b63538;*/
+	background-position: 2.5% 90%;
 }
 .btn-apps {
-    padding: 10px 40px;
+    /*padding: 10px 40px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -932,16 +970,23 @@ section.switch-pages {
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 3px;
-}
-.btn-apps:active {
-    background-color: #009053;
+    border-radius: 3px;*/
+	display: block; 
+    width: 160px;
+    height: 45px;
+    background: url(../img/btn-sprite.png) 51% 10% no-repeat;
+    color: #fff;
 }
 .btn-apps:hover {
-    background-color: #01a25e;
+    /*background-color: #01a25e;*/
+	background-position: 51% 50%;
+}
+.btn-apps:active {
+    /*background-color: #009053;*/
+	background-position: 51% 90%;
 }
 .btn-presentations {
-    padding: 10px 40px;
+    /*padding: 10px 40px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -954,13 +999,20 @@ section.switch-pages {
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 3px;
-}
-.btn-presentations:active {
-    background-color: #009053;
+    border-radius: 3px;*/
+	display: block; 
+    width: 165px;
+    height: 45px;
+    background: url(../img/btn-sprite.png) 100.3% 10% no-repeat;
+    color: #fff;
 }
 .btn-presentations:hover {
-    background-color: #c09b24;
+    /*background-color: #c09b24;*/
+	background-position: 100.3% 50%;
+}
+.btn-presentations:active {
+    /*background-color: #009053;*/
+	background-position: 100.3% 90%;
 }
 /*кнопка где карта с указанием местонахождения*/
 .feedback {
@@ -999,8 +1051,6 @@ section.switch-pages {
 .map {
     width: 100%;
     height: 416px;
-    margin-left: ;
-    margin-right: ;
     background-image: url("../img/contacts/map.png");
 }
 .adres {
@@ -1041,7 +1091,6 @@ section.switch-pages {
     bottom: 35px;
     right: 375px;
     display: none;
-    
     width: 630px;
     height: 415px;
     color: #000000;
@@ -1083,14 +1132,14 @@ section.switch-pages {
 .modal-content label {
     display: flex;
     flex-direction: column;
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: black;
     font-weight: bold;
 }
 .modal-content input {
-    font-family: Roboto Medium;
+    font-family: Roboto Medium, sans-serif;
     font-size: 11px;
     line-height: 18px;
     color: black;
