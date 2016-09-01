@@ -1,13 +1,13 @@
- var link = document.querySelector(".btn-contacts");
+var link = document.querySelector(".btn-contacts");
 
       var popup = document.querySelector(".modal-content");
       var close = popup.querySelector(".modal-content-close");
 
       var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
+      var login = popup.querySelector("[name=name]");
+      var password = popup.querySelector("[name=email]");
 
-      var storage = localStorage.getItem("login");
+      var storage = localStorage.getItem("name");
 
       link.addEventListener("click", function(event) {
         event.preventDefault();
@@ -35,7 +35,7 @@
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
         } else {
-          localStorage.setItem("login", login.value);
+          localStorage.setItem("name", login.value);
         }
       });
 
