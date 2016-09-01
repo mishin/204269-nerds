@@ -24,8 +24,9 @@ h2 {
 
 .container {
     width: 900px;
-    margin-left: 150px;
+    margin: 0 auto;
 }
+
 /*верхнее меню*/
 
 header {
@@ -46,7 +47,7 @@ header {
     height: 195px;
 }
 .flex-item.container {
-    margin-left: 150px;
+    margin: 0 auto;
     width: 880px;
     display: flex;
     padding-left: 10px;
@@ -132,7 +133,7 @@ header {
     position: relative;
     width: 880px;
     height: 310px;
-    margin: 30px 160px;
+    margin: 30px auto
 }
 .slider input[type=radio] {
     position: absolute;
@@ -152,7 +153,7 @@ header {
     display: inline-block;
     width: 4px;
     height: 4px;
-    margin: 0 3px;
+    margin: -1px 4px;
     background: white;
     border: 3px solid white;
     vertical-align: top;
@@ -166,7 +167,7 @@ header {
 }
 .slide {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -205,7 +206,8 @@ header {
     display: none;
 }
 .slide-text p {
-    margin-bottom: 39px;
+	margin-bottom: 37px;
+    margin-top: 20px;
 }
 #btn-1:checked ~ .slides .slide:nth-child(1) {
     display: block;
@@ -232,11 +234,11 @@ header {
     height: 2px;
     background: #eeeeee;
     position: absolute;
-    margin-left: 5px;
-    margin-top: 375px;
+    margin-left: 0px;
+    margin-top: 377px;
 }
 .features-item {
-    padding-right: 40px;
+    padding-right: 39px;
     height: 380px;
 }
 .features-item p {
@@ -270,7 +272,7 @@ header {
 }
 .about-us-left .list {
     margin-top: 47px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .about-us-left ul {
     flex-direction: column;
@@ -289,14 +291,17 @@ header {
     list-style-type: none;
 }
 .about-us-right img {
-    padding-top: 10px;
-    padding-left: 25px;
+    padding-top: 12px;
+    padding-left: 27px;
 }
 .about-us-right p {
     padding-top: 49px;
 }
 .about-us-right li {
     padding-bottom: 22px;
+}
+.about-us-left li:first-child{
+	padding-bottom: 24px;
 }
 .about-us-left li {
     padding-bottom: 20px;
@@ -319,7 +324,7 @@ header {
     background: #fb565a;
     position: absolute;
     left: 0px;
-    margin-top: 7px;
+    margin-top: 9px;
 }
 /*часть сайта с логотипами сайтов*/
 
@@ -352,7 +357,7 @@ header {
     background: #eeeeee;
     position: absolute;
     left: -10px;
-    margin-top: 111px;
+    margin-top: 113px;
 }
 .site-logo img {
     margin-right: 100px;
@@ -522,27 +527,27 @@ section {
     background-color: #b63538;
 }
 .shape.aviator {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-aviator.png") no-repeat 30% 49%;
 }
 .shape.sinset {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-sunset.png") no-repeat 30% 49%;
 }
 .shape.forte {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-forte.png") no-repeat 30% 49%;
 }
 .shape.modern-organic-thai {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-modern-organic-thai.png") no-repeat 30% 49%;
 }
 .shape.avenue {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-avenue.png") no-repeat 30% 49%;
 }
 .shape.dovetail {
-    background-color: #ffffff;
+    background-color: lightyellow;
     background: url("../img/shop/image-dovetail.png") no-repeat 30% 49%;
 }
 .shape:hover .details {
@@ -555,7 +560,7 @@ section {
     margin-bottom: 70px;
 }
 .footer-social {
-    margin-left: -29px;
+    margin-left: -30px;
 }
 .footer-social ul {
     display: flex;
@@ -566,7 +571,7 @@ section {
 .footer-social li {
     padding-left: px;
 }
-.footer-social li a {
+.footer-social a {
     color: white;
     text-decoration: none;
 }
@@ -596,7 +601,7 @@ section {
 }
 .social-btn-fb {
     padding: 30px;
-    margin-right: 25px;
+    margin-right: 28px;
     margin-left: 25px;
     background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
     background-position: 9px -318px;
@@ -612,7 +617,7 @@ section {
 .social-btn-inst {
     padding: 30px;
     background: #e1e1e1 url("../img/sprite/sprite.png") no-repeat;
-    background-position: 9px -363px;
+    background-position: 9px -366px;
 }
 .social-btn-inst:hover {
     background: #fb565a url("../img/sprite/sprite.png") no-repeat;
@@ -623,8 +628,8 @@ section {
     background-position: 9px -363px;
 }
 .a-discount {
-    padding-left: 82px;
-	padding-top: 9px;
+    padding-left: 80px;
+	padding-top: 5px;
 }
 .a-discount h2 {
     font-family: "Roboto Medium", Arial, sans-serif;
@@ -908,13 +913,13 @@ section.switch-pages {
     text-decoration: none;
     border-radius: 2px;
 }
-.switch-pages .page-active a {
+.page-active a {
     padding: 10px 15px;
     border: 1px solid #f1f1f1;
     background: #ffffff;
     border-radius: 3px;
 }
-.switch-pages .page-active a:hover {
+.page-active a:hover {
     padding: 10px 15px;
     border: 1px solid #f1f1f1;
     background: #ffffff;
@@ -930,7 +935,7 @@ section.switch-pages {
 /*кнопкa где слайдер*/
 
 .btn {
-    padding: 10px 70px;
+    padding: 11px 70px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -1059,10 +1064,11 @@ section.switch-pages {
 /*кнопка где карта с указанием местонахождения*/
 
 .feedback {
-    margin-left: 20px;
+    margin-left: 27px;
+	margin-top: 42px;
 }
 .btn-contacts {
-    padding: 10px 50px;
+    padding: 10px 51px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -1088,7 +1094,7 @@ section.switch-pages {
 .contacts {
     position: relative;
     width: 100%;
-	margin-top: -10px;
+	margin-top: -3px;
 }
 .contacts section {
     margin-top: 2px;
@@ -1096,7 +1102,7 @@ section.switch-pages {
 .map {
     width: 100%;
     height: 416px;
-    background-color: #ffffff;
+    background-color: lightyellow;
     background-image: url("../img/contacts/map.png");
 }
 .adres {
@@ -1112,24 +1118,28 @@ section.switch-pages {
     margin-left: 20px;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 200;
+	font-weight: bold;
     color: #000000;
 }
 .adres p {
-    margin-top: 30px;
+    margin-top: 13px;
     margin-left: 20px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #666666;
 }
+.tel p{
+	margin-top: 10px;
+	padding-top: 2px;
+}
 .mapmaker {
     position: absolute;
-    bottom: 120px;
+    bottom: 117px;
     left: 915px;
     width: 231px;
     height: 190px;
-    background: url("../img/contacts/logo-mapmaker.png") no-repeat 35px 60px, url("../img/contacts/mapmaker.png");
+    background: url("../img/contacts/logo-mapmaker.png") no-repeat 35px 57px, url("../img/contacts/mapmaker.png");
 }
 /*всплывающее окно, после клика напишите нам*/
 
@@ -1277,7 +1287,7 @@ img {
 	font-size: 16px;
 	font-weight: 8.56px;
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 23px;
 }
 .since:before {
 	content: "";
@@ -1286,7 +1296,7 @@ img {
     height: 2px;
     background: #eeeeee;
     position: absolute;
-    left: 800px;
+    left: 875px;
     margin-top: 10px;
 }
 .since:after {
@@ -1296,7 +1306,7 @@ img {
     height: 2px;
     background: #eeeeee;
     position: absolute;
-    left: 990px;
+    left: 1055px;
     margin-top: -12px;
 }
 fieldset {
