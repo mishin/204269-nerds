@@ -99,7 +99,7 @@
     <!--Часть сайта с описанием кто представляет услуги-->
     <article class="about-us">
       <div class="about-us-left">
-        <h1>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h1>
+        <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="list">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
         <ul>
@@ -116,6 +116,9 @@
       </div>
       <div class="about-us-right">
         <img src="img/studio/logo-about.png" width="187" height="75" alt="Разработка сайтов под заказ">
+		<div class="since">
+		 SINCE 2004 
+		</div>
         <p class="list">КАК МЫ РАБОТАЕМ:</p>
         <ul>
           <li>
@@ -159,29 +162,11 @@
 		  тел. +7 (812) 275-75-75
 		</p>
 		<div class="feedback">
-		  <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
+		  <a class="btn-contacts" href="form.html">НАПИШИТЕ НАМ</a>
 		</div>
     </div>
     <div class="mapmaker">
     </div>
-	<!--всплывающее окно, после клика напишите нам-->
-    <div class="modal-content">
-      <form>
-	    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		  <div class="top-form-modal">
-			<label class="username">Ваше имя:
-		    <input type="text" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
-	        </label>
-            <label class="email">Ваш e-mail:
-            <input type="text" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
-            </label>
-		  </div>
-		<label class="message">Текст письма:
-          <input type="text" name="message" value="" placeholder="В СВОБОДНОЙ ФОРМЕ">
-        </label>
-        <button class="modal-content-send" type="button" title="Отправить">Отправить</button>
-	  </form>
-    </div> 
   </section>
   <!--Нижняя часть сайта-->
   <footer class="container">
@@ -205,6 +190,24 @@
       </div>
     </div>
   </footer>
+	<!--всплывающее окно, после клика напишите нам-->
+    <div class="modal-content">
+      <form>
+	    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		  <div class="top-form-modal">
+			<label class="username">Ваше имя:
+		    <input type="text" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+	        </label>
+            <label class="email">Ваш e-mail:
+            <input type="text" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+            </label>
+		  </div>
+		<label class="message">Текст письма:
+          <input type="text" name="message" value="" placeholder="В СВОБОДНОЙ ФОРМЕ">
+        </label>
+        <button class="modal-content-send" type="submit" title="Отправить">Отправить</button>
+	  </form>
+    </div> 
   <script src="../js/script.js"></script>
 </body>
 
