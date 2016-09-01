@@ -25,12 +25,15 @@
       close.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
       });
 
       form.addEventListener("submit", function(event) {
         if (!login.value || !password.value) {
           event.preventDefault();
-          console.log("Нужно ввести логин и пароль"); 
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
         } else {
           localStorage.setItem("login", login.value);
         }
@@ -40,6 +43,7 @@
         if (event.keyCode === 27) {
           if (popup.classList.contains("modal-content-show")) {
             popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
           }
         }
       });

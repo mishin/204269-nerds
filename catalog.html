@@ -45,40 +45,40 @@
   <div class="flex-continer container">
     <aside class="left">
       <form action="#" method="get">
-        <h3>СТОИМОСТЬ:</h3>
-        <div class="range-filter">
+        <fieldset class="range-filter">
+		  <legend>СТОИМОСТЬ:</legend>
 		  <div class="range-controls">
 			<div class="scale"><div style="width:70%;" class="bar"></div></div>
 			<div class="toggle min-toggle"></div>
 			<div class="toggle max-toggle"></div>
 		  </div>
 		  <div class="price-controls">
-		    <b>от</b> <input class="min-price" type="text" value="0">
-			<b>до</b> <input class="max-price" type="text" value="15 000">
+		    ОТ <input class="min-price" type="text" value="0">
+			ДО <input class="max-price" type="text" value="15 000">
 		  </div>
-		</div>
-        <div class="design-options">
-          <h3>СЕТКА:</h3>
-            <input type="radio" id="ch1" name="question-one" value="Адаптивная" checked> 
+		</fieldset>
+        <fieldset class="design-options">
+	      <legend>СЕТКА:</legend>
+            <input type="radio" name="question-one" value="Адаптивная"  id="ch1" checked> 
             <label for="ch1">Адаптивная</label>
-            <input type="radio" id="ch2" name="question-one" value="Фиксированная">
+            <input type="radio" name="question-one" value="Фиксированная" id="ch2" disabled>
             <label for="ch2">Фиксированная</label>
-            <input type="radio" id="ch3" name="question-one" value="Резиновая"> 
+            <input type="radio" name="question-one" value="Резиновая"  id="ch3" disabled> 
             <label for="ch3">Резиновая</label>
-        </div>
-        <div class="features">
-          <h3>ОСОБЕННОСТИ:</h3>
+		</fieldset>
+        <fieldset class="features">
+          <legend>ОСОБЕННОСТИ:</legend>
             <input type="checkbox" id="fh1" name="two-question" value="Слайдер" checked>
-            <label>Слайдер</label>
-            <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ">
-            <label>Блок преимуществ</label>
+            <label for="fh1">Слайдер</label>
+            <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ" disabled>
+            <label for="fh2">Блок преимуществ</label>
             <input type="checkbox" id="fh3" name="two-question" value="Новости" checked>
-            <label>Новости</label>
-            <input type="checkbox" id="fh4" name="two-question" value="Галерея">
-            <label>Галерея</label>
-            <input type="checkbox" id="fh5" name="two-question" value="Корзина">
-            <label>Корзина</label>
-        </div>
+            <label for="fh3">Новости</label>
+            <input type="checkbox" id="fh4" name="two-question" value="Галерея" disabled>
+            <label for="fh4">Галерея</label>
+            <input type="checkbox" id="fh5" name="two-question" value="Корзина" disabled>
+            <label for="fh5">Корзина</label>
+        </fieldset>
         <button class="btn-show">ПОКАЗАТЬ</button>
       </form>
     </aside>
@@ -185,7 +185,7 @@
 		  тел.	+7 (812) 275-75-75
 		</p>
 		<div class="feedback">
-		  <a class="btn-contacts" href="#">НАПИШИТЕ НАМ</a>
+		  <a class="btn-contacts" href="form.html">НАПИШИТЕ НАМ</a>
 		</div>
     </div>
     <div class="mapmaker">
