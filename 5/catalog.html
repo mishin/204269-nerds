@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <!--Лого, верхнее меню-->
   <header class="main-header-catalog">
     <div class="flex-item container">
       <div class="logo">
@@ -47,38 +46,41 @@
     <aside class="left">
       <form action="#" method="get">
         <fieldset class="range-filter">
-		  <legend>СТОИМОСТЬ:</legend>
-		  <div class="range-controls">
-			<div class="scale"><div style="width:70%;" class="bar"></div></div>
-			<div class="toggle min-toggle"></div>
-			<div class="toggle max-toggle"></div>
-		  </div>
-		  <div class="price-controls">
-		    ОТ <input class="min-price" type="text" value="0">
-			ДО <input class="max-price" type="text" value="15 000">
-		  </div>
-		</fieldset>
+          <legend>СТОИМОСТЬ:</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div style="width:70%;" class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            ОТ
+            <input class="min-price" type="text" value="0"> ДО
+            <input class="max-price" type="text" value="15 000">
+          </div>
+        </fieldset>
         <fieldset class="design-options">
-	      <legend>СЕТКА:</legend>
-            <input type="radio" name="question-one" value="Адаптивная"  id="ch1" checked> 
-            <label for="ch1">Адаптивная</label>
-            <input type="radio" name="question-one" value="Фиксированная" id="ch2" disabled>
-            <label for="ch2">Фиксированная</label>
-            <input type="radio" name="question-one" value="Резиновая"  id="ch3" disabled> 
-            <label for="ch3">Резиновая</label>
-		</fieldset>
+          <legend>СЕТКА:</legend>
+          <input type="radio" name="question-one" value="Адаптивная" id="ch1" checked>
+          <label for="ch1">Адаптивная</label>
+          <input type="radio" name="question-one" value="Фиксированная" id="ch2" disabled>
+          <label for="ch2">Фиксированная</label>
+          <input type="radio" name="question-one" value="Резиновая" id="ch3" disabled>
+          <label for="ch3">Резиновая</label>
+        </fieldset>
         <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
-            <input type="checkbox" id="fh1" name="two-question" value="Слайдер" checked>
-            <label for="fh1">Слайдер</label>
-            <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ" disabled>
-            <label for="fh2">Блок преимуществ</label>
-            <input type="checkbox" id="fh3" name="two-question" value="Новости" checked>
-            <label for="fh3">Новости</label>
-            <input type="checkbox" id="fh4" name="two-question" value="Галерея" disabled>
-            <label for="fh4">Галерея</label>
-            <input type="checkbox" id="fh5" name="two-question" value="Корзина" disabled>
-            <label for="fh5">Корзина</label>
+          <input type="checkbox" id="fh1" name="two-question" value="Слайдер" checked>
+          <label for="fh1">Слайдер</label>
+          <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ" disabled>
+          <label for="fh2">Блок преимуществ</label>
+          <input type="checkbox" id="fh3" name="two-question" value="Новости" checked>
+          <label for="fh3">Новости</label>
+          <input type="checkbox" id="fh4" name="two-question" value="Галерея" disabled>
+          <label for="fh4">Галерея</label>
+          <input type="checkbox" id="fh5" name="two-question" value="Корзина" disabled>
+          <label for="fh5">Корзина</label>
         </fieldset>
         <button class="btn-show">ПОКАЗАТЬ</button>
       </form>
@@ -86,7 +88,7 @@
 
     <main class="content">
       <section class="sort">
-        <span>СОРТИРОВАТЬ:</span>
+        <h4>СОРТИРОВАТЬ:</h4>
         <ul>
           <li>
             <a class="show" href="#">ПО ЦЕНЕ</a>
@@ -100,99 +102,100 @@
         </ul>
       </section>
       <article class="show">
-		<div class="options">
-        <section class="shape aviator">
-            <div class="details">
-                <h3>AVIATOR</h3>
-                <p class="description">Одностраничный макет с авторским дизайном.</p>
-                <a class="button" href="#">10000 Р.</a>
-            </div>
-        </section>
-		<section class="shape sinset">
-            <div class="details">
-                <h3>SINSET</h3>
-                <p class="description">Интернет-магазин с личным кабинетом.</p>
-                <a class="button" href="#">8000 Р.</a>
-            </div>
-        </section>
-		</div>
-		<div class="options two">
-        <section class="shape forte">
-            <div class="details">
-                <h3>FORTE</h3>
-                <p class="description">Отличный макет для личного блога.</p>
-                <a class="button" href="#">5000 Р.</a>
-            </div>
-        </section>
-		<section class="shape modern-organic-thai">
-            <div class="details">
-                <h3>Modern organic THAI</h3>
-                <p class="description">Сайт для ресторана быстрого питания.</p>
-                <a class="button" href="#">12000 Р.</a>
-            </div>
-        </section>
-		</div>
-		<div class="options three">
-		<section class="shape avenue">
-            <div class="details">
-                <h3>AVENUE</h3>
-                <p class="description">Макет для блога о путешествиях.</p>
-                <a class="button" href="#">8000 Р.</a>
-            </div>
-        </section>
-		<section class="shape dovetail">
-            <div class="details">
-                <h3>DOVETAIL</h3>
-                <p class="description">Интернет-магазин с галереей товаров.</p>
-                <a class="button" href="#">14000 Р.</a>
-            </div>
-        </section>
-		</div>
-      </article>
-	  
-      <section class="switch-pages">
-        <div class="switch-pages">
-          <ul>
-            <li class="page-active">
-              <a class="switch-pages" href="#">1</a>
-            </li>
-            <li>
-              <a class="switch-pages" href="#">2</a>
-            </li>
-            <li>
-              <a class="switch-pages" href="#">3</a>
-            </li>
-            <li>
-              <a class="switch-pages" href="#">СЛЕДУЮЩАЯ</a>
-            </li>
-          </ul>
+        <div class="h1">
+          <h2>Варианты цен сайтов</h2>
         </div>
-      </section>
-	</div>
-  </main>
-  <!--Часть сайта с контактными данными-->
+        <div class="options">
+          <section class="shape aviator">
+            <div class="details">
+              <h3>AVIATOR</h3>
+              <p class="description">Одностраничный макет с авторским дизайном.</p>
+              <a class="button" href="#">10000 Р.</a>
+            </div>
+          </section>
+          <section class="shape sinset">
+            <div class="details">
+              <h3>SINSET</h3>
+              <p class="description">Интернет-магазин с личным кабинетом.</p>
+              <a class="button" href="#">8000 Р.</a>
+            </div>
+          </section>
+        </div>
+        <div class="options two">
+          <section class="shape forte">
+            <div class="details">
+              <h3>FORTE</h3>
+              <p class="description">Отличный макет для личного блога.</p>
+              <a class="button" href="#">5000 Р.</a>
+            </div>
+          </section>
+          <section class="shape modern-organic-thai">
+            <div class="details">
+              <h3>Modern organic THAI</h3>
+              <p class="description">Сайт для ресторана быстрого питания.</p>
+              <a class="button" href="#">12000 Р.</a>
+            </div>
+          </section>
+        </div>
+        <div class="options three">
+          <section class="shape avenue">
+            <div class="details">
+              <h3>AVENUE</h3>
+              <p class="description">Макет для блога о путешествиях.</p>
+              <a class="button" href="#">8000 Р.</a>
+            </div>
+          </section>
+          <section class="shape dovetail">
+            <div class="details">
+              <h3>DOVETAIL</h3>
+              <p class="description">Интернет-магазин с галереей товаров.</p>
+              <a class="button" href="#">14000 Р.</a>
+            </div>
+          </section>
+        </div>
+      </article>
+
+
+      <div class="switch-pages">
+        <ul>
+          <li class="page-active">
+            <a class="switch-pages" href="#">1</a>
+          </li>
+          <li>
+            <a class="switch-pages" href="#">2</a>
+          </li>
+          <li>
+            <a class="switch-pages" href="#">3</a>
+          </li>
+          <li>
+            <a class="switch-pages" href="#">СЛЕДУЮЩАЯ</a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
   <section class="contacts">
     <div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412363!2d30.32089461564032!3d59.938796869048495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472373222520" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <script src="./js/map-scripts.js"></script>
     </div>
     <div class="adres">
-	    <div class="name">
+      <h3>
 		  NЁRDS DESIGN STUDIO
-	    </div> 
-	    <p>
-		  191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-	    </p>
-		<p class="tel">
-		  тел.	+7 (812) 275-75-75
-		</p>
-		<div class="feedback">
-		  <a class="btn-contacts" href="form.html">НАПИШИТЕ НАМ</a>
-		</div>
+		</h3>
+      <p>
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p class="tel">
+        тел. +7 (812) 275-75-75
+      </p>
+      <div class="feedback">
+        <a class="btn-contacts" href="form.html">НАПИШИТЕ НАМ</a>
+      </div>
     </div>
     <div class="mapmaker">
     </div>
   </section>
-  <!--Нижняя часть сайта-->
   <footer class="container">
     <div class="footer-flex">
       <div class="footer-social">
@@ -206,7 +209,7 @@
           <li>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </li>
-		</ul>
+        </ul>
       </div>
       <div class="a-discount">
         <h2>Давайте дружить, это выгодно!</h2>
@@ -214,24 +217,23 @@
       </div>
     </div>
   </footer>
-	<!--всплывающее окно, после клика напишите нам-->
-    <div class="modal-content">
-      <form>
-	    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		  <div class="top-form-modal">
-			<label class="username">Ваше имя:
-		    <input type="text" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
-	        </label>
-            <label class="email">Ваш e-mail:
-            <input type="text" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
-            </label>
-		  </div>
-		<label class="message">Текст письма:
-          <input type="text" name="message" value="" placeholder="В СВОБОДНОЙ ФОРМЕ">
+  <div class="modal-content">
+    <form>
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="top-form-modal">
+        <label class="username">Ваше имя:
+          <input type="text" name="name" value="" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
         </label>
-        <button class="modal-content-send" type="submit" title="Отправить">Отправить</button>
-	  </form>
-    </div> 
+        <label class="email">Ваш e-mail:
+          <input type="text" name="email" value="" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </label>
+      </div>
+      <label class="message">Текст письма:
+        <input type="text" name="message" value="" placeholder="В СВОБОДНОЙ ФОРМЕ">
+      </label>
+      <button class="modal-content-send" type="submit" title="Отправить">Отправить</button>
+    </form>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 
