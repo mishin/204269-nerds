@@ -999,14 +999,17 @@ input[type="checkbox"]:disabled + label:hover {
     background-color: #b63538;
 }
 .contacts {
-    position: relative;
-    width: 1200px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 .contacts section {
     margin-top: 2px;
+}
+.map-block {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
 }
 .map {
     width: 100%;
