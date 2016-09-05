@@ -500,6 +500,7 @@ section {
     color: #ffffff;
     background-color: #fb565a;
     border-radius: 2px;
+	vertical-align: top;
 }
 .button:hover {
     color: #ffffff;
@@ -602,11 +603,11 @@ section {
 }
 .social-btn-inst:hover {
     background: #fb565a url("../img/sprite/sprite.png") no-repeat;
-    background-position: 9px -363px;
+    background-position: 9px -366px;
 }
 .social-btn-inst:active {
     background: #d6494d url("../img/sprite/sprite.png") no-repeat;
-    background-position: 9px -363px;
+    background-position: 9px -366px;
 }
 .a-discount {
     padding-left: 80px;
@@ -714,9 +715,21 @@ section {
 .design-options label {
     display: flex;
     position: relative;
-    padding-left: 34px;
+    padding-left: 35px;
     padding-bottom: 17px;
     color: #7e8386;
+}
+input[type="radio"] + label:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/sprite/sprite.png") no-repeat;
+    background-position: -5px -230px;
+    position: absolute;
+    left: -5px;
+    margin-top: -7px;
+	z-index: 100;
 }
 input[type="radio"]:disabled + label:before {
     content: "";
@@ -727,7 +740,8 @@ input[type="radio"]:disabled + label:before {
     background-position: -5px -230px;
     position: absolute;
     left: -3px;
-    margin-top: -6px;
+    margin-top: -7px;
+	z-index: 100;
 }
 input[type="radio"]:checked + label:before {
     content: "";
@@ -737,13 +751,14 @@ input[type="radio"]:checked + label:before {
     background: url("../img/sprite/sprite.png") no-repeat;
     background-position: -5px -190px;
     position: absolute;
-    left: -3px;
+    left: -4px;
     margin-top: -7px;
+	z-index: 100;
 }
 input[type="radio"]:checked + label {
     color: #a9adaf;
 }
-input[type="radio"]:disabled + label:hover {
+input[type="radio"] + label:hover {
     color: #111111;
 }
 .features input[type="checkbox"] {
@@ -755,6 +770,17 @@ input[type="radio"]:disabled + label:hover {
     padding-left: 35px;
     padding-bottom: 17px;
     color: #7e8386;
+}
+input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/sprite/sprite.png") no-repeat;
+    background-position: -5px -150px;
+    position: absolute;
+    left: -4px;
+    margin-top: -5px;
 }
 input[type="checkbox"]:disabled + label:before {
     content: "";
@@ -781,7 +807,7 @@ input[type="checkbox"]:checked + label:before {
 input[type="checkbox"]:checked + label {
     color: #a9adaf;
 }
-input[type="checkbox"]:disabled + label:hover {
+input[type="checkbox"] + label:hover {
     color: #111111;
 }
 .btn-show {
@@ -1090,6 +1116,8 @@ input[type="checkbox"]:disabled + label:hover {
     position: absolute;
     top: 120px;
     left: 50%;
+	margin-left: -315px;
+	z-index: 1010;
     display: none;
     width: 630px;
     height: 415px;
@@ -1242,4 +1270,7 @@ h4 {
     font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+iframe {
+	border: 0px;
 }

@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/m-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,24 +61,24 @@
         </fieldset>
         <fieldset class="design-options">
           <legend>СЕТКА:</legend>
-          <input type="radio" name="question-one" value="Адаптивная" id="ch1">
+          <input type="radio" name="question-one" value="Адаптивная" id="ch1" checked>
           <label for="ch1">Адаптивная</label>
-          <input type="radio" name="question-one" value="Фиксированная" id="ch2">
+          <input type="radio" name="question-one" value="Фиксированная" id="ch2" checked>
           <label for="ch2">Фиксированная</label>
-          <input type="radio" name="question-one" value="Резиновая" id="ch3">
+          <input type="radio" name="question-one" value="Резиновая" id="ch3" checked>
           <label for="ch3">Резиновая</label>
         </fieldset>
         <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
-          <input type="checkbox" id="fh1" name="two-question" value="Слайдер" checked>
+          <input type="checkbox" id="fh1" name="two-question" value="Слайдер">
           <label for="fh1">Слайдер</label>
-          <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ" disabled>
+          <input type="checkbox" id="fh2" name="two-question" value="Блок преимуществ">
           <label for="fh2">Блок преимуществ</label>
           <input type="checkbox" id="fh3" name="two-question" value="Новости" checked>
           <label for="fh3">Новости</label>
-          <input type="checkbox" id="fh4" name="two-question" value="Галерея" disabled>
+          <input type="checkbox" id="fh4" name="two-question" value="Галерея">
           <label for="fh4">Галерея</label>
-          <input type="checkbox" id="fh5" name="two-question" value="Корзина" disabled>
+          <input type="checkbox" id="fh5" name="two-question" value="Корзина">
           <label for="fh5">Корзина</label>
         </fieldset>
         <button class="btn-show">ПОКАЗАТЬ</button>
@@ -172,17 +172,18 @@
         </ul>
       </div>
 
-    </main>
+    
   </div>
+	</main>
   <section class="contacts">
     <div class="map">
-      <script src="./js/map-scripts.js"></script>
+      <script src="./js/m-map-scripts.js"></script>
     </div>
 	<div class="map-block">
     <div class="adres">
       <h3>
 		  NЁRDS DESIGN STUDIO
-		</h3>
+	    </h3>
       <p>
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
@@ -196,6 +197,7 @@
     <div class="mapmaker">
     </div>
 	</div>
+  </section>
   </section>
   <footer class="container">
     <div class="footer-flex">
@@ -235,7 +237,7 @@
       <button class="modal-content-send" type="submit" title="Отправить">Отправить</button>
     </form>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="./js/m-script.js"></script>
 </body>
 
 </html>
