@@ -24,9 +24,6 @@ h2 {
     width: 900px;
     margin: 0 auto;
 }
-header {
-    height: 90px;
-}
 .main-header {
     width: 100%;
     padding-top: 29px;
@@ -37,9 +34,8 @@ header {
 .main-header-catalog {
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 102px;
     background-color: #eeeeee;
-    height: 195px;
+    min-height: 297px;
 }
 .flex-item.container {
     margin: 0 auto;
@@ -218,7 +214,7 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
-.features-flex:after {
+.about-us:before {
     content: "";
     display: block;
     width: 880px;
@@ -226,11 +222,11 @@ header {
     background: #eeeeee;
     position: absolute;
     margin-left: 0px;
-    margin-top: 377px;
+    margin-top: -47px;
 }
 .features-item {
     padding-right: 39px;
-    height: 380px;
+    min-height: 380px;
 }
 .features-item p {
     width: 280px;
@@ -425,9 +421,11 @@ main .content {
     display: flex;
 }
 .options.two {
+	flex-wrap: wrap;
     margin-top: 52px;
 }
 .options.three {
+	flex-wrap: wrap;
     margin-top: 52px;
 }
 section {
@@ -476,7 +474,7 @@ section {
 .details h3 {
     font-family: "Roboto Medium", Arial, sans-serif;
     display: block;
-    padding-top: 30px;
+    padding-top: 3px;
     font-size: 18px;
     font-weight: 9px;
     text-align: center;
@@ -494,13 +492,16 @@ section {
     z-index: 2;
     display: inline-block;
     padding: 8px 35px;
-    margin-top: -3px;
+    margin-top: 23px;
     margin-left: 40px;
     text-decoration: none;
     color: #ffffff;
     background-color: #fb565a;
     border-radius: 2px;
 	vertical-align: top;
+}
+.modern-organic-thai a {
+    margin-top: 0px;
 }
 .button:hover {
     color: #ffffff;
@@ -511,27 +512,28 @@ section {
     background-color: #b63538;
 }
 .shape.aviator {
-    background-color: lightyellow;
+    background-color: #808080;
     background: url("../img/shop/image-aviator.png") no-repeat 18px 49%;
 }
 .shape.sinset {
-    background-color: lightyellow;
+    background-color: #808080;
     background: url("../img/shop/image-sunset.png") no-repeat 18px 49%;
 }
 .shape.forte {
-    background-color: lightyellow;
+    background-color: #808080;
     background: url("../img/shop/image-forte.png") no-repeat 18px 49%;
 }
 .shape.modern-organic-thai {
-    background-color: lightyellow;
+	
+    background-color: #808080;
     background: url("../img/shop/image-modern-organic-thai.png") no-repeat 18px 49%;
 }
 .shape.avenue {
-    background-color: lightyellow;
+    background-color: #808080;
     background: url("../img/shop/image-avenue.png") no-repeat 18px 49%;
 }
 .shape.dovetail {
-    background-color: lightyellow;
+    background-color: #808080;
     background: url("../img/shop/image-dovetail.png") no-repeat 18px 49%;
 }
 .shape:hover .details {
@@ -812,7 +814,6 @@ input[type="checkbox"] + label:hover {
 }
 .btn-show {
     margin-top: 30px;
-    margin-left: 9px;
     border: none;
     padding: 7px 45px;
     font-size: 12px;
@@ -888,7 +889,7 @@ input[type="checkbox"] + label:hover {
 .switch-pages {
 	padding-top: 40px;
     padding-left: 29px;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
 }
 .switch-pages ul {
     display: flex;
@@ -999,11 +1000,15 @@ input[type="checkbox"] + label:hover {
     background-position: 100.3% 90%;
 }
 .feedback {
-    margin-left: 27px;
-    margin-top: 42px;
+    margin-left: 19px;
+    margin-top: 44px;
+	margin-bottom: 3px;
 }
 .btn-contacts {
-    padding: 10px 51px;
+    padding-left: 50px;
+    padding-right: 59px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -1025,12 +1030,11 @@ input[type="checkbox"] + label:hover {
     background-color: #b63538;
 }
 .contacts {
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 .contacts section {
-    margin-top: 2px;
+    margin-top: -1px;
 }
 .map-block {
   position: relative;
@@ -1050,18 +1054,19 @@ input[type="checkbox"] + label:hover {
     left: 160px;
     background-color: white;
     width: 250px;
-    height: 240px;
+	padding-bottom: 30px;
 }
 .adres h3 {
-    margin-top: 24px;
+    margin-top: 25px;
     margin-left: 20px;
+	margin-bottom: 12px;
     font-size: 16px;
     line-height: 30px;
     font-weight: bold;
     color: #000000;
 }
 .adres p {
-    margin-top: 13px;
+    margin-top: 9px;
     margin-left: 20px;
     font-size: 16px;
     line-height: 20px;
