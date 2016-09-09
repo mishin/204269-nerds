@@ -23,6 +23,7 @@ h2 {
 .container {
     width: 900px;
     margin: 0 auto;
+	overflow: hidden;
 }
 .main-header {
     width: 100%;
@@ -30,7 +31,6 @@ h2 {
     padding-bottom: 102px;
     background-color: #eeeeee;
     height: 308px;
-	
 }
 .main-header-catalog {
     width: 100%;
@@ -244,6 +244,7 @@ h2 {
 }
 .about-us-right {
     width: 250px;
+	position: relative;
 }
 .about-us-left {
     width: 650px;
@@ -279,6 +280,28 @@ h2 {
 .about-us-right img {
     padding-top: 12px;
     padding-left: 27px;
+}
+.about-us-right:before {
+	position: absolute;
+    content: "";
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: #eeeeee;
+    position: absolute;
+    left: 5px;
+    margin-top: 126px;
+}
+.about-us-right:after {
+    position: absolute;
+	content: "";
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: #eeeeee;
+    position: absolute;
+    left: 175px;
+    margin-top: -292px;
 }
 .about-us-right p {
     padding-top: 49px;
@@ -1033,6 +1056,7 @@ input[type="checkbox"] + label:hover {
     background-color: #b63538;
 }
 .contacts {
+	overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1241,26 +1265,6 @@ img {
     font-weight: 8.56px;
     text-align: center;
     margin-top: 23px;
-}
-.since:before {
-    content: "";
-    display: block;
-    width: 65px;
-    height: 2px;
-    background: #eeeeee;
-    position: absolute;
-    left: 875px;
-    margin-top: 10px;
-}
-.since:after {
-    content: "";
-    display: block;
-    width: 65px;
-    height: 2px;
-    background: #eeeeee;
-    position: absolute;
-    left: 1055px;
-    margin-top: -12px;
 }
 fieldset {
     border: none;
