@@ -30,6 +30,7 @@ h2 {
     padding-bottom: 102px;
     background-color: #eeeeee;
     height: 308px;
+	
 }
 .main-header-catalog {
     width: 100%;
@@ -419,25 +420,29 @@ main .content {
 }
 .options {
     display: flex;
+	flex-wrap: nowrap;
 }
 .options.two {
-	flex-wrap: wrap;
-    margin-top: 52px;
+	flex-wrap: nowrap;
+    margin-top: 82px;
 }
 .options.three {
-	flex-wrap: wrap;
-    margin-top: 52px;
+	flex-wrap: nowrap;
+    margin-top: 82px;
 }
 section {
     margin-top: -1px;
 }
 .shape {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 270px;
     margin-right: 20px;
     background-color: #ffffff;
     overflow: hidden;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 2px;
 }
 .shape:before {
     content: "";
@@ -447,8 +452,8 @@ section {
     background: url("../img/top-img-sprite.png") no-repeat;
     background-position: -20px -0px;
     position: absolute;
-    left: 17px;
-    margin-top: -0px;
+    left: -1px;
+    margin-top: 1px;
 }
 .shape:hover::before {
     content: "";
@@ -458,13 +463,13 @@ section {
     background: url("../img/top-img-sprite.png") no-repeat;
     background-position: -313px -0px;
     position: absolute;
-    left: 17px;
-    margin-top: -0px;
+    left: -1px;
+    margin-top: 0px;
 }
 .shape .details {
     display: none;
     position: absolute;
-    left: 35px;
+    left: 20px;
     top: 45px;
     width: 200px;
     height: 200px;
@@ -512,29 +517,28 @@ section {
     background-color: #b63538;
 }
 .shape.aviator {
-    background-color: #808080;
-    background: url("../img/shop/image-aviator.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-aviator.png") no-repeat 0px 99%;
+	margin-left: 20px;
 }
 .shape.sinset {
-    background-color: #808080;
-    background: url("../img/shop/image-sunset.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-sunset.png") no-repeat 0px 99%;
+	margin-left: 57px;
 }
 .shape.forte {
-    background-color: #808080;
-    background: url("../img/shop/image-forte.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-forte.png") no-repeat 0px 99%;
+	margin-left: 20px;
 }
 .shape.modern-organic-thai {
-	
-    background-color: #808080;
-    background: url("../img/shop/image-modern-organic-thai.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-modern-organic-thai.png") no-repeat 0px 99%;
+	margin-left: 57px
 }
 .shape.avenue {
-    background-color: #808080;
-    background: url("../img/shop/image-avenue.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-avenue.png") no-repeat 0px 99%;
+	margin-left: 20px;
 }
 .shape.dovetail {
-    background-color: #808080;
-    background: url("../img/shop/image-dovetail.png") no-repeat 18px 49%;
+    background: #f1f1f1 url("../img/shop/image-dovetail.png") no-repeat 0px 99%;
+	margin-left: 57px;
 }
 .shape:hover .details {
     display: block
@@ -769,8 +773,8 @@ input[type="radio"] + label:hover {
 .features label {
     display: flex;
     position: relative;
-    padding-left: 35px;
-    padding-bottom: 17px;
+    padding-left: 32px;
+    padding-bottom: 18px;
     color: #7e8386;
 }
 input[type="checkbox"] + label:before {
@@ -781,8 +785,8 @@ input[type="checkbox"] + label:before {
     background: url("../img/sprite/sprite.png") no-repeat;
     background-position: -5px -150px;
     position: absolute;
-    left: -4px;
-    margin-top: -5px;
+    left: -6px;
+    margin-top: -6px;
 }
 input[type="checkbox"]:disabled + label:before {
     content: "";
@@ -803,8 +807,7 @@ input[type="checkbox"]:checked + label:before {
     background: url("../img/sprite/sprite.png") no-repeat;
     background-position: -5px -110px;
     position: absolute;
-    left: -3px;
-    margin-top: -5px;
+    left: -5px;
 }
 input[type="checkbox"]:checked + label {
     color: #a9adaf;
@@ -887,7 +890,7 @@ input[type="checkbox"] + label:hover {
     white-space: nowrap;
 }
 .switch-pages {
-	padding-top: 40px;
+	padding-top: 69px;
     padding-left: 29px;
     padding-bottom: 75px;
 }
